@@ -107,8 +107,7 @@ function MyComponent() {
         >
           {markers.map((marker) => (
             <Marker
-              onMouseOut={() => setHover(null)}
-              onMouseOver={() =>
+              onMouseDown={() =>
                 setHover(
                   businesses.find((business) => business.id === marker.id)
                 )
