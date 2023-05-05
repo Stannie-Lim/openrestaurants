@@ -116,7 +116,6 @@ function MyComponent() {
               label={marker.label}
             />
           ))}
-          {console.log(hover, center)}
           {hover && (
             <DirectionsService
               options={{
