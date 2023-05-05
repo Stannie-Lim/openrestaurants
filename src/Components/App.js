@@ -5,14 +5,20 @@ import { useSelector, useDispatch } from "react-redux";
 import { loginWithToken } from "../store";
 import { Link, Routes, Route } from "react-router-dom";
 
+import Map from "./Map";
+
 const App = () => {
   const { auth } = useSelector((state) => state);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(loginWithToken());
+    // dispatch(loginWithToken());
   }, []);
 
-  return <div></div>;
+  return (
+    <div>
+      <Map />
+    </div>
+  );
 };
 
 export default App;
